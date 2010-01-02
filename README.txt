@@ -1,4 +1,4 @@
-ethodIntroduction
+Introduction
 ============
 
 This package provides means of hooking into the Zope (ZCML) configuration
