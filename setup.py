@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os.path
 
-version = "1.0b1"
+version = '1.0b2'
 
 setup(name                  = "z3c.zcmlhook",
       version               = version,
