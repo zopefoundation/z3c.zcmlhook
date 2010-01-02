@@ -1,4 +1,4 @@
-Introduction
+ethodIntroduction
 ============
 
 This package provides means of hooking into the Zope (ZCML) configuration
@@ -53,8 +53,8 @@ the function call above like so::
             order="9999"
             />
 
-Using a method more than once
------------------------------
+Using a handler more than once
+------------------------------
 
 The ``discriminator`` attribute can also be used to explicitly allow using
 the same handler more than once. If you wanted to call
