@@ -32,7 +32,10 @@ setup(name                  = "z3c.zcmlhook",
           "zope.schema",
           "zope.configuration",
           ],
-      extras_require        = {},
+      extras_require        = dict(
+          test=[
+              'zope.component[test]',
+              ]),
       tests_require         = "nose >=0.10.0b1",
       test_suite            = "nose.collector",
       )
