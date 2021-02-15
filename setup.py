@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 
-version = '1.0b2'
+version = '1.1'
 
 
 def read(path):
