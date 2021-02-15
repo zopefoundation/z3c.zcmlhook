@@ -18,6 +18,7 @@ setup(name="z3c.zcmlhook",
           + read('CHANGES.rst')
       ),
       classifiers=[
+          "Development Status :: 6 - Mature",
           "Environment :: Web Environment",
           "Intended Audience :: Developers",
           "License :: OSI Approved :: Zope Public License",
