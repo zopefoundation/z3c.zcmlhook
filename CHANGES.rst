@@ -4,7 +4,9 @@ Changelog
 1.0b2 (unreleased)
 ------------------
 
-- Added test extra to declare test dependency on ``zope.component
+- Add support for Python 3.5, 3.6, 3.7, 3.8 and 3.9.
+
+- Add test extra to declare test dependency on ``zope.component
   [test]``. [icemac]
 
 
