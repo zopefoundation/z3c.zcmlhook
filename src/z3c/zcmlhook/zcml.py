@@ -1,6 +1,6 @@
-from zope.interface import Interface
 from zope import schema
 from zope.configuration.fields import GlobalObject
+from zope.interface import Interface
 
 
 class ICustomActionDirective(Interface):
