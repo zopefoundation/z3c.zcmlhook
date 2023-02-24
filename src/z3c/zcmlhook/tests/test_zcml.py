@@ -1,12 +1,12 @@
+import threading
 from unittest import TestCase
 
+import zope.component.testing
 from zope.configuration import xmlconfig
 from zope.configuration.config import ConfigurationConflictError
 
-import zope.component.testing
 import z3c.zcmlhook
 
-import threading
 
 testState = threading.local()
 
