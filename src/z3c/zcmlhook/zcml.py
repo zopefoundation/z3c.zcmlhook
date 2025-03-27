@@ -36,7 +36,7 @@ class ICustomActionDirective(Interface):
 
 def customAction(_context, handler, order=0, discriminator=None):
     if discriminator is None:
-        discriminator = "{}.{}".format(handler.__module__, handler.__name__)
+        discriminator = f"{handler.__module__}.{handler.__name__}"
 
     _context.action(
         discriminator=("executeCustomFunction", discriminator),
