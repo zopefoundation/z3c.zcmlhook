@@ -4,7 +4,8 @@ Changelog
 3.0 (unreleased)
 ----------------
 
-- Drop support for ``pkg_resources`` namespace and replace it with PEP 420 native namespace. Caution: This change requires to switch all packages in the namespace of the package to versions using a PEP 420 namespace.
+- Drop support for ``pkg_resources`` namespace and replace it with PEP 420
+  native namespace.
 
 
 2.1 (2025-03-31)
