@@ -1,8 +1,7 @@
-from setuptools import find_packages
 from setuptools import setup
 
 
-version = '2.2.dev0'
+version = '3.0.dev0'
 
 
 def read(path):
@@ -37,9 +36,6 @@ setup(name="z3c.zcmlhook",
       author_email="zope-dev@zope.dev",
       url="https://github.com/zopefoundation/z3c.zcmlhook",
       license="ZPL",
-      namespace_packages=["z3c"],
-      packages=find_packages("src"),
-      package_dir={"": "src"},
       include_package_data=True,
       zip_safe=False,
       python_requires='>=3.9',
