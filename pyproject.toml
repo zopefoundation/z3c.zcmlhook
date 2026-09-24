@@ -7,6 +7,51 @@ requires = [
 ]
 build-backend = "setuptools.build_meta"
 
+[project]
+name = "z3c.zcmlhook"
+version = "3.1.dev0"
+description = "Easily hook into the ZCML processing machinery"
+license = "ZPL-2.1"
+classifiers = [
+    "Development Status :: 6 - Mature",
+    "Environment :: Web Environment",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dynamic = ["readme"]
+requires-python = ">=3.10"
+authors = [
+    {name = "Martin Aspeli",email = "zope-dev@zope.dev"},
+]
+maintainers = [
+    {name = "Plone Foundation and contributors",email = "zope-dev@zope.dev"},
+]
+dependencies = [
+    "zope.component",
+    "zope.interface",
+    "zope.schema",
+    "zope.configuration",
+]
+keywords = ["zope", "zcml", "hook"]
+
+[project.optional-dependencies]
+test = [
+    "zope.component[test]",
+]
+
+
+[project.urls]
+Source = "https://github.com/zopefoundation/z3c.zcmlhook"
+Issues = "https://github.com/zopefoundation/z3c.zcmlhook/issues"
+Changelog = "https://raw.githubusercontent.com/zopefoundation/z3c.zcmlhook/master/CHANGES.rst"
+
 [tool.coverage.run]
 branch = true
 source = ["z3c.zcmlhook"]
@@ -34,3 +79,6 @@ directory = "parts/htmlcov"
 create-wheel = false
 extra-message = ""
 upload-pypi = false
+
+[tool.setuptools.dynamic]
+readme = {file = ["README.rst", "CHANGES.rst"]}
