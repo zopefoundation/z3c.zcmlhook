@@ -27,10 +27,5 @@ additional-rules = [
     "recursive-include src *.zcml",
     ]
 
-[git]
-ignore = [
-    ".venv",
-]
-
 [pypi]
 trusted-publishing = true

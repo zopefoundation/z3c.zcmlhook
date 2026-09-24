@@ -31,4 +31,3 @@ pyvenv.cfg
 share/
 testing.log
 var/
-.venv
