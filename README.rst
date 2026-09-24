@@ -7,7 +7,7 @@ process.
 Custom ZCML actions
 -------------------
 
-It is sometimes useful to execute a function during the execution of 
+It is sometimes useful to execute a function during the execution of
 configuration actions, for example to perform one-off configuration that does
 not warrant a new directive. The ``<zcml:customAction />`` directive is
 provided for this purpose.
@@ -20,14 +20,14 @@ execution cycle. This can be achieved with the following ZCML statements::
         xmlns="http://namespaces.zope.org/zope"
         xmlns:zcml="http://namespaces.zope.org/zcml"
         i18n_domain="my.package">
-        
+
         <include package="z3c.zcmlhook" file="meta.zcml" />
-        
+
         <zcml:customAction
             handler="my.package.finalConfiguration"
             order="9999"
             />
-        
+
     </configure>
 
 The ``handler`` attribute gives the name of a function to execute. The
