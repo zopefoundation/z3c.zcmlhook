@@ -12,17 +12,15 @@ testState = threading.local()
 
 
 def test_fn1():
-    testState.executions.append('test_fn1')
+    testState.executions.append("test_fn1")
 
 
 def test_fn2():
-    testState.executions.append('test_fn2')
+    testState.executions.append("test_fn2")
 
 
 class TestZCMLDeclarations(TestCase):
-
     def setUp(self):
-        global testState
         testState.executions = []
 
     def tearDown(self):
@@ -32,13 +30,13 @@ class TestZCMLDeclarations(TestCase):
         zcml = xmlconfig.XMLConfig("test1.zcml", z3c.zcmlhook.tests)
         zcml()
 
-        self.assertEqual(['test_fn1'], testState.executions)
+        self.assertEqual(["test_fn1"], testState.executions)
 
     def test_invoke_order(self):
         zcml = xmlconfig.XMLConfig("test2.zcml", z3c.zcmlhook.tests)
         zcml()
 
-        self.assertEqual(['test_fn2', 'test_fn1'], testState.executions)
+        self.assertEqual(["test_fn2", "test_fn1"], testState.executions)
 
     def test_invoke_conflict(self):
         zcml = xmlconfig.XMLConfig("test3.zcml", z3c.zcmlhook.tests)
@@ -47,9 +45,10 @@ class TestZCMLDeclarations(TestCase):
     def test_custom_discriminator(self):
         zcml = xmlconfig.XMLConfig("test4.zcml", z3c.zcmlhook.tests)
         zcml()
-        self.assertEqual(['test_fn1', 'test_fn1'], testState.executions)
+        self.assertEqual(["test_fn1", "test_fn1"], testState.executions)
 
 
 def test_suite():
     import unittest
+
     return unittest.defaultTestLoader.loadTestsFromName(__name__)
