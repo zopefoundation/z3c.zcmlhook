@@ -9,7 +9,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "z3c.zcmlhook"
-version = "3.1"
+version = "3.2.dev0"
 description = "Easily hook into the ZCML processing machinery"
 license = "ZPL-2.1"
 classifiers = [
