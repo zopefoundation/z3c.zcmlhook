@@ -4,7 +4,9 @@ Changelog
 3.2 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Add support for Python 3.15.
+
+- Drop support for Python 3.10.
 
 
 3.1 (2026-09-25)
